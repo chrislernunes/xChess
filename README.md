@@ -1,4 +1,4 @@
-# ⚡ LightningChess
+# xChess
 
 > A blazing-fast personal chess engine combining GPU-accelerated neural network evaluation, hybrid alpha-beta/MCTS search, and magic-bitboard move generation — fully UCI-compatible and ready to plug into Arena, CuteChess, or lichess.
 
