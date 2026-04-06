@@ -1,0 +1,9 @@
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/LightningChess.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/test_perft.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/test.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/list_install_components.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/install.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/install/local.dir
+C:/Users/User/Desktop/VSC Projects/LightningChess/build/CMakeFiles/install/strip.dir
