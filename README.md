@@ -1,6 +1,6 @@
 # xChess
 
-> A blazing-fast personal chess engine combining GPU-accelerated neural network evaluation, hybrid alpha-beta/MCTS search, and magic-bitboard move generation — fully UCI-compatible and ready to plug into Arena, CuteChess, or lichess.
+> A personal chess engine combining GPU-accelerated neural network evaluation, hybrid alpha-beta/MCTS search, and magic-bitboard move generation — fully UCI-compatible and ready to plug into Arena, CuteChess, or lichess.
 
 ---
 
@@ -18,10 +18,14 @@
 
 ---
 
+![xChess Dashboard](xchess-demo.png)
+
+---
+
 ## Folder Structure
 
 ```
-LightningChess/
+xChess/
 ├── src/
 │   ├── main.cpp            # UCI loop + CLI entry point
 │   ├── engine.h/.cpp       # Hybrid search controller
@@ -62,8 +66,8 @@ LightningChess/
 ### CPU-only build
 
 ```bash
-git clone https://github.com/yourname/LightningChess.git
-cd LightningChess
+git clone https://github.com/chrislernunes/xChess.git
+cd xChess
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_CUDA=OFF -DTORCH_DIR=/path/to/libtorch
 make -j$(nproc)
@@ -80,13 +84,13 @@ make -j$(nproc)
 
 ```bash
 # UCI mode (connect to Arena / CuteChess)
-./LightningChess
+./xChess
 
 # Interactive play mode
-./LightningChess --play
+./xChess --play
 
 # Benchmark
-./LightningChess --bench
+./xChess --bench
 ```
 
 ---
@@ -111,7 +115,7 @@ Performance measured on an RTX 3060 vs. a Ryzen 7 5800X (CPU-only):
 
 ```
 ╔══════════════════════════════════════════════════════╗
-║         LightningChess — Benchmark Summary           ║
+║            xChess — Benchmark Summary                ║
 ╠══════════════════════════════════════════════════════╣
 ║  Mode             Nodes/sec    Depth-10 time         ║
 ║  CPU (HCE)        160,000      3.2 s                 ║
@@ -125,16 +129,13 @@ Performance measured on an RTX 3060 vs. a Ryzen 7 5800X (CPU-only):
 
 ---
 
-### Live Performance Dashboard (terminal)
+## Live Performance Dashboard
 
-#### Textual Dashboard (terminal)
-
-Run the live dashboard alongside the engine to monitor performance in real time:
+Run the terminal dashboard alongside the engine to monitor performance in real time:
 
 ```bash
 python dashboard/textual_dashboard.py
 ```
-
 
 ---
 
@@ -167,3 +168,4 @@ UCI Input
 │  │  256 positions @ once    │   │
 │  └──────────────────────────┘   │
 └─────────────────────────────────┘
+```
