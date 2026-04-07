@@ -135,29 +135,6 @@ Run the live dashboard alongside the engine to monitor performance in real time:
 python dashboard/textual_dashboard.py
 ```
 
-Example output:
-
-```
-╔════════════════════════════════════════════════════════════════════════════╗
-║                    ⚡ LightningChess Live Dashboard ⚡                      ║
-╟────────────────────────────────────────────────────────────────────────────╢
-║  📊 CORE PERFORMANCE METRICS                                               ║
-║                                                                            ║
-║  Engine Strength (ELO)          :  2,870     ▲ +42 this week              ║
-║  Speed (Nodes/sec)              :  1,240,000                              ║
-║  GPU Speedup                    :  7.8×      (vs pure CPU)                 ║
-║  Training Progress              :  Epoch 42/100 • Loss: 0.023 • Acc: 94%  ║
-║                                                                            ║
-║  📈 BONUS METRIC                                                           ║
-║  Search Efficiency              :  Avg Depth 18.4 • Hybrid Mode (72% MCTS)║
-║  Win Rate vs Stockfish L8       :  68%       (1,200 games)                 ║
-╟────────────────────────────────────────────────────────────────────────────╢
-║  Last Updated: Monday, April 06, 2026  10:15 AM IST                       ║
-║  GPU Utilization: 91% • Batch Size: 256 • Model: CNN                      ║
-╚════════════════════════════════════════════════════════════════════════════╝
-```
-
-Works alongside the Jupyter notebook with zero extra dependencies — just standard Python.
 
 ---
 
@@ -190,23 +167,3 @@ UCI Input
 │  │  256 positions @ once    │   │
 │  └──────────────────────────┘   │
 └─────────────────────────────────┘
-```
-
----
-
-## Future Ideas
-
-- [ ] NNUE-style efficiently updatable neural network
-- [ ] Opening book integration (Polyglot format)
-- [ ] Endgame tablebases (Syzygy)
-- [ ] Pondering (search during opponent's turn)
-- [ ] Multi-PV support
-- [ ] Self-play reinforcement learning loop
-- [ ] Web UI via WebAssembly port
-- [ ] Distributed search across multiple GPUs
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE)
